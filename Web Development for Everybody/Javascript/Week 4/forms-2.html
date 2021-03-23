@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Forms</title>
+        <script>
+            function nick()
+            {
+                if (document.getElementById('check').checked)
+                {
+                    document.getElementById("nicklabel").style.display = 'inline';
+                    document.getElementById('nickname').style.display = 'inline';
+                }
+                else
+                {
+                    document.getElementById("nicklabel").style.display = 'none';
+                    document.getElementById("nickname").style.display = 'none';
+                }
+            }
+            function change()
+            {
+                var x = document.getElementById("pwd");
+                var y = document.getElementById("conf_pwd");
+                if (x.value != y.value)
+                {
+                    alert("Password and Confirm Password Not matched");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>HTML Forms</h1>
+        <form autocomplete="on">
+            <fieldset>
+                <legend><b>Name</b></legend>
+                <label for="fname"><b>First Name: &nbsp;</b></label>
+                <input type="text" id="fname" name="fname" placeholder="Your First Name">
+                <br>
+                <br>
+                <label for="mname"><b>Middle Name: &nbsp;</b></label>
+                <input type="text" id="mname" name="mname" placeholder="Your Middle Name">
+                <br>
+                <br>
+                <label for="lname"><b>Last Name: &nbsp;</b></label>
+                <input type="text" id="lname" name="lname" placeholder="Your Last Name">
+                <br>
+                <br>
+                <label for="momname"><b>Mother's Name: &nbsp;</b></label>
+                <input type="text" id="momname" name="momname" placeholder="Your Mother's Name">
+                <br>
+                <br>
+                <label for="check"><b>I have a Nickname!!! &emsp13;</b></label>
+                <input type="checkbox" id="check" name="check" value="Yes" onchange="nick()">
+                <br>
+                <br>
+                <label for="nickname" id="nicklabel" style="display: none;"><b>Nickname: &nbsp;</b></label>
+                <input type="text" id="nickname" name="nickname" placeholder="Your nickname" style="display: none;">
+            </fieldset>
+            <br>
+            <b>Gender: &emsp13;</b>
+            <label for="male">Male </label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female </label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="other">Others </label>
+            <input type="radio" id="other" name="gender" value="others">
+            <br>
+            <br>
+            <label for="cont_no"><b>Contact Number: &emsp13;</b></label>
+            <input type="text" id="cont_no" name="cont_no" pattern="[0-9]{10}" title="10 digit mobile number" multiple>
+            <br>
+            <br>
+            <label for="email"><b>Email-ID: &emsp13;</b></label>
+            <input type="email" id="email" name="email" multiple>
+            <br>
+            <br>
+            <label for="age"><b>Age: &emsp13;</b></label>
+            <input type="number" id="age" name="age" min="18" max="65" required autofocus>
+            <br>
+            <br>
+            <label for="color"><b>Favourite Color: &emsp13;</b></label>
+            <input type="color" id="color" name="color">
+            <br>
+            <br>
+            <label for="pwd"><b>Enter Password: &emsp13;</b></label>
+            <input type="password" id="pwd" name="pwd">
+            <br>
+            <br>
+            <label for="conf_pwd"><b>Confirm Password: &emsp13;</b></label>
+            <input type="password" id="conf_pwd" name="conf_pwd" onchange="change();">
+            <br>
+            <br>
+            <input type="submit" value="Submit" onclick="return change();">
+        </form>
+    </body>
+</html>

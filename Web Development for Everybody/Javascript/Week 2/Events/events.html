@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Events practice</title>
+        <script>
+            function notify()
+            {
+                alert("You are notified");
+            }
+            function ask()
+            {
+                var x = prompt("Your name: ");
+                document.write("<h4> Hello "+x+"</h4>");
+            }
+            function change()
+            {
+                document.getElementById("me").innerHTML = "Content has been changed.";
+            }
+            function displayDate()
+            {
+                document.getElementById('date').innerHTML = Date();
+            }
+        </script>
+    </head>
+
+    <body onresize="notify()">
+        <h1>Events practice</h1>
+        <h3 onclick="notify()">Notify here</h3>
+        <h3 onclick="ask()">Ask here</h3>
+        <h3 onmouseover="change()" id="me">Change Content</h3>
+        <button onclick="displayDate()">Show date</button>
+        <h3 id="date"></h3>
+    </body>
+</html>

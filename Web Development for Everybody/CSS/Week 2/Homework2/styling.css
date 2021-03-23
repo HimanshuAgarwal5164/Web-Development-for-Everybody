@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(172, 168, 168);
+    font-size: 120%;
+    margin: 1%;
+}
+header,footer{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(1,7,52,1) 100%);
+    margin: 1%;
+    padding: 2%;
+}
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+nav a{
+    text-align: center;
+    display: inline-block;
+    width: 21%;
+    margin: 1%;
+    float: left;
+    background-color: rgb(255, 255, 255);
+    color: rgb(109, 2, 109);
+    font-variant: small-caps;
+}
+
+h2{
+    color: gray;
+    background-color: turquoise;
+}
+
+.half{
+    display: inline-block;
+    width: 46%;
+    margin: 1%;
+    float: left;
+}
+
+.full{
+    clear: both;
+}

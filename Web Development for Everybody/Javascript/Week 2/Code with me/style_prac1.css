@@ -1,0 +1,22 @@
+button{
+    background-color: mediumturquoise;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 10%;
+    margin: 1%;
+    padding: 4px 2%;
+    border: 0px;
+    height: 2%;
+    font-size: 120%;
+}
+p{
+    margin: 15px 1%;
+    font-size: 120%;
+    width: 20%;
+    border: black 1px solid;
+    text-align: center;
+}
+#change{
+    background-color: gray;
+    color: white;
+}

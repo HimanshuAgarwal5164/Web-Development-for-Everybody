@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Variables Demo</title>
+    </head>
+    <body>
+        <h1>Variables Demo</h1>
+        <p>Let's see how variables are used in Javascript.</p>
+        <script>
+            var name = prompt("Enter your name: ");
+            var date = Date();
+            document.write("<p><b>Hello "+name+", the time is: "+date+"</b></p>");
+            var loc = window.location;
+            document.write(loc);
+            base_url = document.URL;
+            document.write("<h3>"+base_url+"</h3>");
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            document.write("Your window is "+w+"px wide and "+h+"px long.")
+        </script>
+    </body>
+</html>

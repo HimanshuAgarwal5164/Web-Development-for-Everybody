@@ -1,0 +1,50 @@
+table{
+    border: solid 3px black;
+    font-size: 120%;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgb(235, 230, 230);
+    border-spacing: 0px;
+}
+caption{
+    font-size: 120%;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+th{
+    height: 25px;
+    width: 100px;
+    background-color: white;
+    color: slategrey;
+}
+tbody tr{
+    height: 80px;
+}
+tbody tr:nth-child(odd){
+    background-color: rgb(240, 231, 231);
+}
+tbody tr:nth-child(even){
+    background-color: rgb(189, 149, 19);
+}
+.old{
+    background-color: whitesmoke;
+    color: silver;
+}
+.holiday{
+    background-color: rgb(25, 42, 99);
+    border-radius: 0px 0px 10px 0px;
+}
+tr:last-child td:first-child{
+    border-radius: 0px 0px 0px 10px;
+}
+span{
+    display: block;
+    visibility: hidden;
+}
+td:hover span{
+    visibility: visible;
+}
+td{
+    vertical-align: top;
+}

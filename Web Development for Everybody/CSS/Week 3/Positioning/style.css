@@ -1,0 +1,18 @@
+.this{
+    position: relative;
+    top: 20px;
+    left: 100px;
+}
+.that{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+.then{
+    position: fixed;
+    top: 300px;
+}
+.why{
+    position: sticky;
+    top: 400px;
+}

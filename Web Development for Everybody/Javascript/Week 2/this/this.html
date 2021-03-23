@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The "this" keyword</title>
+        <link rel="stylesheet" href="style_this.css"/>
+        <script>
+            function display(element)
+            {
+                document.getElementById("hover").innerHTML = element.alt;
+            }
+            function regular()
+            {
+                document.getElementById("hover").innerHTML = "Hover over an image to display its alternate text here";
+            }
+        </script>
+    </head>
+    <body>
+        <h3 id="hover">Hover over an image to display its alternate text here</h3>
+        <img src="Me2.jpg" alt="Guddu ki shaadi" onmouseover="display(this)" onmouseout="regular()"/>
+        <img src="Me3.jpg" alt="My first I-Phone" onmouseover="display(this)" onmouseout="regular()"/>
+        <img src="beer.jpeg" alt="I enjoy drinking beer" onmouseover="display(this)" onmouseout="regular()"/>
+        <img src="australia.jpeg" alt="Brochure of an international education institution" onmouseover="display(this)" onmouseout="regular()"/>
+    </body>
+</html>

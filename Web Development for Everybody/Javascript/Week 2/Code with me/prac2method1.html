@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Code with me</title>
+        <link rel="stylesheet" href="style_prac2method1.css"/>
+        <script>
+            function openMe()
+            {
+                document.getElementById("change").style.display='block';
+            }
+            function closeMe()
+            {
+                document.getElementById("change").style.display='none';
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Changing the Style of the Element</h1>
+        <p>Javascript can change the style of an Element</p>
+        <button onclick="openMe()">Open!</button>
+        <button onclick="closeMe()">Close!</button>
+        <p id="change">Extra details..... You can open and close this paragraphs using the buttons above. </p>
+    </body>
+</html>

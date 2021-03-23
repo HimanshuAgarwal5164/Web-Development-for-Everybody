@@ -1,0 +1,19 @@
+<!--write a small program that pops up an alert message when you load the page. 
+    Or better yet, change the content of your page to the current Date every time you open the page.-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Events</title>
+        <script>
+            function setDate()
+            {
+                document.getElementById("me").innerHTML = Date();
+            }
+        </script>
+    </head>
+    <body onload="setDate()">
+        <h1>Events practice</h1>
+        <h3 id="me"></h3>
+    </body>
+</html>

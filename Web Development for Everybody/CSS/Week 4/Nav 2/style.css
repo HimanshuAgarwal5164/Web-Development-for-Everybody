@@ -1,0 +1,26 @@
+body{
+    margin: 2%;
+    background-color: whitesmoke;
+}
+nav{
+    border: solid 2px black;
+    background-color: white;
+}
+a{
+    display: inline-block;
+    width: 10%;
+    background-color: rgb(81, 158, 9);
+    text-decoration: none;
+    color: white;
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+    border-radius: 30px;
+}
+a:active{
+    background-color: darkred;
+}
+a:hover{
+    color: black;
+    border-radius: 0px;
+}

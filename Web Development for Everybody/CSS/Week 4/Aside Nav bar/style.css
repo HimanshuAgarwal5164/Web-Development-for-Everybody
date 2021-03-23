@@ -1,0 +1,22 @@
+body{
+    margin: 2%;
+}
+nav{
+    display: inline-block;
+    width: 17%;
+    height: 700px;
+    background-color: rgb(98, 139, 16);
+    float: left;
+}
+nav a{
+    display: block;
+    padding: 40px;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+section{
+    display: inline-block;
+    width: 80%;
+    margin-left: 10px;
+}

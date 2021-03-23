@@ -1,0 +1,17 @@
+h2{
+    color: brown;
+    background-color: lightgray;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 1%;
+    margin: 0 auto;
+    border: solid 1px green;
+    transition: color 2s ease 4s, background-color 4s linear 1s, border-radius 2s ease 0s, transform 5s ease 0s;
+}
+h2:hover{
+    color: lightyellow;
+    background-color: rgb(110, 61, 12);
+    border-radius: 10px;
+    transform: rotate(60deg) translateY(100px);
+}

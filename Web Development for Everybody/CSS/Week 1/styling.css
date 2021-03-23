@@ -1,0 +1,37 @@
+header{
+    font-size: 200%;
+}
+
+h1{
+    background-color: darkkhaki;
+    color: chartreuse;
+    text-align: center;
+}
+
+nav{
+    color: aquamarine;
+    background-color: black;
+}
+
+section{
+    text-align: left;
+    color: rgb(202, 202, 202);
+    background-color: rgb(39, 39, 39);
+    font-family: cursive;
+}
+
+h2{
+    color:black;
+    background-color: oldlace;
+    font-variant: small-caps;
+}
+
+details{
+    font-size: 120%;
+    font-style: italic;
+}
+
+footer{
+    background-color: rgb(49, 0, 0);
+    color: rgb(95, 219, 13);
+}

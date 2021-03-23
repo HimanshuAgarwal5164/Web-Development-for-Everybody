@@ -1,0 +1,18 @@
+h2{
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin: 0 auto;
+    border: turquoise solid 2px;
+    transition: color 5s ease 1s, background-color 5s ease 1s, transform 5s ease 1s, border-radius 5s ease 1s;
+}
+
+h2:hover{
+    color: black;
+    background-color: white;
+    transform: scale(2,2) translate(0px,20px);
+    border-radius: 10px;
+}
